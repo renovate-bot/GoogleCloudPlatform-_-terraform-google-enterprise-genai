@@ -24,7 +24,7 @@ data "google_storage_project_service_account" "gcs_logging_account" {
 
 module "env_logs" {
   source  = "terraform-google-modules/project-factory/google"
-  version = "~> 15.0"
+  version = "~> 18.0"
 
   random_project_id        = true
   random_project_id_length = 4
