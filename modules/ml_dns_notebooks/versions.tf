@@ -1,5 +1,5 @@
 /**
- * Copyright 2021 Google LLC
+ * Copyright 2024 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,26 +21,9 @@ terraform {
       source  = "hashicorp/google"
       version = ">= 3.61"
     }
-    google-beta = {
-      source  = "hashicorp/google-beta"
-      version = ">= 3.61"
-    }
-    null = {
-      source  = "hashicorp/null"
-      version = "~> 3.0"
-    }
-
-    random = {
-      source  = "hashicorp/random"
-      version = "~> 3.1"
-    }
   }
 
   provider_meta "google" {
-    module_name = "blueprints/terraform/terraform-google-enterprise-genai:publish_artifacts/v0.11.0"
-  }
-
-  provider_meta "google-beta" {
-    module_name = "blueprints/terraform/terraform-google-enterprise-genai:publish_artifacts/v0.11.0"
+    module_name = "blueprints/terraform/terraform-google-enterprise-genai:ml_dns_notebooks/v0.11.0"
   }
 }
