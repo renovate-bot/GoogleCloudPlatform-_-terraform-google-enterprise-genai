@@ -20,7 +20,7 @@ locals {
 
 module "kms_keyrings" {
   source   = "terraform-google-modules/kms/google"
-  version  = "~> 2.3"
+  version  = "~> 4.0"
   for_each = toset(var.keyring_regions)
 
   project_id      = var.project_id
